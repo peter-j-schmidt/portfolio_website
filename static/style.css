@@ -1,7 +1,9 @@
-#resume_button {
-  align-self: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background-image: url("images/flight_with_nick.JPG")
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
 }
