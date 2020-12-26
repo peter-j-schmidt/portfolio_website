@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.content {
+    height: 100vh;
+    margin: 0;
+}
+
+.jumbotron {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/profile_image.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    color: black;
+    height: 100vh;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+}
+
+.container h1 {
+    position: relative;
+    top: -200px;
+    font-size: 70px;
+}
+
+.container .lead {
+    position: relative;
+    top: -150px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.txt-type > .txt {
+    border-right: 0.2rem solid black;
+}
+
+.navbar {
+    transition: top 0.5s ease;
+    top: -56px;
+    padding: 0 0;
+}
+
+.navbar-show {
+    top: 0px;
+}
