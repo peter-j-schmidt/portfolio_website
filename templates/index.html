@@ -15,7 +15,21 @@
     </head>
     <body>
 
-        <nav class="navbar position-fixed navbar-expand-lg navbar-transparent bg-transparent">
+        <!-- Carousel Fade -->
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="view">
+                    <div class="carousel=item active">
+                        <img src="../static/images/homepage_image.JPG" class="d-block 1=100" alt="profile">
+                    </div>
+                </div>
+                <div class="mask rgba-black-slight"></div>
+            </div>
+        </div>
+
+        <!-- Sticky-Top Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Peter J. Schmidt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +47,10 @@
                             <a class="nav-link">Blog</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
