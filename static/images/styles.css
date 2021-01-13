@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: url("../static/images/homepage_image.JPG") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+@media (min-width: 1470px) {
+    .img-fluid {
+        max-width: 1470px;
+        background-position: bottom;
+    }
+}
+*/
+@media screen and (max-width: 768px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    background: url("../static/images/data_code.JPG") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

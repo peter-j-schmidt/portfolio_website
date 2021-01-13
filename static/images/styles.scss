@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ main {
 .hero {
     display: flex;
     height: 100vh;
-    background: url('../static/images/homepage_image.JPG');
+    background: url('../static/images/homepage_image.JPG') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -24,8 +26,12 @@ main {
 }
 */
 
-@include media-breakpoint-down(md) {
+@media screen and (max-width: 768px) {
     .hero {
-        background: url('../static/images/data_code.jpeg');
+        display: flex;
+        height: 100vh;
+        background: url('../static/images/data_code.JPG') no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
