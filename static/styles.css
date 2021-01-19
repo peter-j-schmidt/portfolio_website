@@ -17,14 +17,6 @@ main {
   background-position: center;
 }
 
-.visible {
-  visibility: visible !important;
-}
-
-.invisible {
-  visibility: hidden !important;
-}
-
 /*
 @media (min-width: 1470px) {
     .img-fluid {
@@ -42,13 +34,6 @@ main {
     background: url("../static/images/data_code.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  .visible {
-    visibility: hidden !important;
-    display: none;
-  }
-  .invisible {
-    visibility: visible !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
