@@ -17,6 +17,11 @@ main {
     background-position: center;
 }
 
+#profileCircle {
+    width: 50%;
+    height: 50%;
+}
+
 /*
 @media (min-width: 1470px) {
     .img-fluid {
@@ -26,7 +31,7 @@ main {
 }
 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .hero {
         display: flex;
         height: 100vh;
