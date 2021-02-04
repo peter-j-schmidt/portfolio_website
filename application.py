@@ -16,7 +16,7 @@ app = Flask(__name__)
 def index():
     return render_template("index_2.html")
 
-@app.route("/courses", methods=["GET", "POST"])
+@app.route("/education", methods=["GET", "POST"])
 def courses():
 
     if request.method == "GET":
