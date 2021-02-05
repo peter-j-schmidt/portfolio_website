@@ -12,17 +12,22 @@ import datetime
 
 app = Flask(__name__)
 
+# Homepage displaying hero image and other website sections
 @app.route("/")
 def index():
     return render_template("index_2.html")
 
-@app.route("/education", methods=["GET", "POST"])
-def courses():
+# Page that displays Degrees, certificates, and other coursework
+@app.route("/education")
+def education():
+    return render_template("education.html")
 
-    if request.method == "GET":
+# A page displaying projects completed
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
 
-        return render_template("courses.html")
-
-    else:
-
-        return render_template("courses.html")
+# A landing page with links to other, non-tech works
+@app.route("/other")
+def other():
+    return render_template("other.html")
