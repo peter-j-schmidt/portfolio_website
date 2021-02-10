@@ -12,10 +12,17 @@ main {
 .hero {
     display: flex;
     height: 100vh;
-    background: url('../static/images/homepage_image.JPG') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('../static/images/homepage_image.JPG') no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+
+
 
 #profileCircle {
     width: 50%;
