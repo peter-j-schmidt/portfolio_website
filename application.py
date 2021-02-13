@@ -22,7 +22,7 @@ db = conn.cursor()
 # Homepage displaying hero image and other website sections
 @app.route("/")
 def index():
-    return render_template("index_2.html")
+    return render_template("index.html")
 
 # Page that displays Degrees, certificates, and other coursework
 @app.route("/education")
