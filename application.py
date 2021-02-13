@@ -40,4 +40,7 @@ def other():
     return render_template("other.html")
 
 
-# A route for the personal blog. 
+# A route for the personal blog.
+@app.route("/blog")
+def blog():
+    pass
