@@ -1,4 +1,5 @@
 import os
+import sqlite3
 
 from flask import Flask, render_template, request, redirect, session, jsonify
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
@@ -9,8 +10,14 @@ from flask_session import Session
 
 import datetime
 
-
+# initialize the app
 app = Flask(__name__)
+
+# initialize the database
+conn = sqlite3.connect('database.db')
+
+# create cursor object for database manipulation
+db = conn.cursor()
 
 # Homepage displaying hero image and other website sections
 @app.route("/")
@@ -31,3 +38,6 @@ def projects():
 @app.route("/other")
 def other():
     return render_template("other.html")
+
+
+# A route for the personal blog. 
