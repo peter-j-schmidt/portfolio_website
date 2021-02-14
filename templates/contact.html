@@ -17,19 +17,19 @@
                 <form action="/contact" method="POST">
                     <div class="mb-3 mt-5">
                         <label class="form-label">First Name</label>
-                        <input type="text" class="form-control">
+                        <input name="first" type="text" class="form-control" value="{{ first }}" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Last Name</label>
-                        <input type="text" class="form-control">
+                        <input name="last" type="text" class="form-control" value="{{ last }}" required>
                     </div>
                     <div class="mb-2">
                         <label class="form-label">Email</label>
-                        <input type="text" class="form-control">
+                        <input name="email" type="email" class="form-control" value="{{ email }}" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Message</label>
-                        <textarea class="form-control" placeholder="Leave your message here" style="height: 100px;"></textarea>
+                        <textarea name="message" class="form-control" placeholder="Leave your message here" style="height: 100px;"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
