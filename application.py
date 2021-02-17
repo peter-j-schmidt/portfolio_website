@@ -20,6 +20,7 @@ app = Flask(__name__)
 # create cursor object for database manipulation
 # db = conn.cursor()
 
+""" This section is for future development
 # Configure the mail parameters
 app.config['MAIL_SSERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 25
@@ -27,28 +28,30 @@ app.config['MAIL_USERNAME'] = 'email@gmail.com'
 app.config['MAIL_PASSWORD'] = '*****'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
+"""
 
 # Homepage displaying hero image and other website sections
-@app.route("/")
+@app.route('/')
 def index():
     return render_template("index.html")
 
 # Page that displays Degrees, certificates, and other coursework
-@app.route("/education")
+@app.route('/education')
 def education():
     return render_template("education.html")
 
 # A page displaying projects completed
-@app.route("/projects")
+@app.route('/projects')
 def projects():
     return render_template("projects.html")
 
 # A landing page with links to other, non-tech works
-@app.route("/other")
+@app.route('/other')
 def other():
     return render_template("other.html")
 
-@app.route("/contact", methods=['GET', 'POST'])
+"""
+@app.route('/contact, methods=['GET', 'POST'])
 def contact():
 
     if request.method == 'POST':
@@ -72,9 +75,14 @@ def contact():
     
     elif request.method == 'GET':
         return render_template("contact.html")
+        """
 
-
+"""
 # A route for the personal blog.
-# @app.route("/blog")
-# def blog():
-    # pass
+@app.route('/blog')
+def blog():
+    pass
+"""
+
+if __name__ == '__main__':
+    app.run()
