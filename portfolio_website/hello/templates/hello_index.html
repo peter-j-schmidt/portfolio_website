@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- Required tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Bootstrap Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <!-- Non-Bootstrap CSS -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body  class="container-fluid bg-light px-0">
+
+         <!-- Hero Image -->
+         <div class="hero">
+        
+            <!-- Container for Typewriter effect -->
+            <!-- Typewriter effect below is developed based on tutorials from Traversy Media, Dev Ed, and Geeks for Geeks -->
+            <div class="container-fluid d-none d-md-block">
+                <div class="row h-50">
+                    <div class="col-md-8 col-lg-6 align-self-center justify-content-center">
+                        <h1 class="d-flex align-items-center justify-content-center" style="font-family: 'Montserrat', serif; font-style: italic; font-size: 80px; text-shadow: 6px 6px 6px rgb(83, 83, 83);">Peter Schmidt</h1>
+                    </div>
+                </div>
+                <div class="row h-50">
+                    <div class="col-md-6 col-lg-6">
+                        <span class="d-flex justify-content-center">
+                            <h3 class="d-flex align-items-center justify-content-center" style="font-family: 'Montserrat', serif; font-style: italic; font-size: 40px; text-shadow: 6px 6px 6px rgb(83, 83, 83);">Full Stack Developer</h3>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Possible profile image  -->
+            <!-- 
+            <div class="container-fluid d-block d-md-none">
+                <div class="row h-100">
+                    <div class="col-12 align-items-center">
+                        <img src='../static/images/homepage_image.JPG' class="ratio-1x1 img-fluid rounded-circle align-self-center" alt="profile picture">
+                    </div>    
+                    <div class="col-12 p-5">
+                        <h1 class="text-white align-self-center">Peter Schmidt</h1>
+                    </div>
+                </div>
+            </div>
+            -->
+
+
+        </div>
+        
+        <div class="container-fluid bg-light">
+
+            <!-- About Me section -->
+            <div class="row px-5 pt-5 pb-5">
+                <div class="col m-auto">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center">
+                                        About Me
+                                    </h4>
+                                    <p class="card-text d-flex justify-content-center"> Hello, world! My name is Peter Schmidt. I am a self-taught developer from Atlanta, GA. 
+                                        Click on the images below to check out some of the courses I've taken and projects I'm working on!</p>
+                                    <span>
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="https://github.com/peter-j-schmidt"><i class="bi bi-github text-secondary"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="https://linkedin.com/in/peter-john-schmidt"><i class="bi bi-linkedin text-secondary"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="https://www.youtube.com/channel/UC_bUdqnlOkrA_PbBHdYs6gQ"><i class="bi bi-youtube text-secondary"></i></a>
+                                            </li>
+                                        </ul>
+                                    </span>
+
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <p class="fs-5">schmidt.peter.john@gmail.com</p>
+                                    </div>
+
+                                    <!--
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="btn btn-secondary justify-content-center" href="/contact" role="button">Contact Me!</a>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
+                    <a href="/education">
+                        <figure class="figure">
+                            <img src="{% static 'hello/images/CS50_lightbulbs.jpg' %}" class="fig-img img-fluid" alt="Education">
+                            <figcaption class="figure-caption">Image from CS50 project</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center">
+                    <h3 class="d-flex justify-content-center">Education</h3>
+                    <p class="d-flex justify-content-center">See what coursework I've done and what certificates I've earned.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center">
+                    <h3 class="d-flex justify-content-center">Projects</h3>
+                    <p class="d-flex justify-content-center">Take a look at the projects I'm working on!</p>
+                </div>
+                <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
+                    <a href="/projects">
+                        <img src="{% static 'hello/images/data_code.jpeg' %}" class="img-fluid" alt="Projects">
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
+                    <a href="/other">
+                        <figure class="figure">
+                            <img src="{% static 'hello/images/Alison_Flight.jpg' %}" class="fig-img img-fluid" alt="Education">
+                            <figcaption class="figure-caption">Taking my wife out for an afternoon flight.</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center">
+                    <h3 class="d-flex justify-content-center">Other Work</h3>
+                    <p class="d-flex justify-content-center">A collection of non-tech related work that I've done.</p>
+                </div>
+            </div>
+
+            <!--
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center">
+                    <h3 class="d-flex justify-content-center">Blog</h3>
+                    <p class="d-flex justify-content-center">A place where I write about my experiences learning software development.</p>
+                </div>
+                <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
+                    <a href="/projects">
+                        <img src="../static/images/data_code.jpeg" class="img-fluid" alt="Projects">
+                    </a>
+                </div>
+            </div>
+            -->
+
+        </div>
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
