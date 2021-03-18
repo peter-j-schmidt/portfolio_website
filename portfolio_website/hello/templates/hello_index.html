@@ -15,7 +15,13 @@
         <!-- Bootstrap Icon CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-        <!-- Non-Bootstrap CSS -->
+        <!-- Animate On Scroll CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Animate.CSS CSS -->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Personal CSS -->
         <link href="/static/styles.css" rel="stylesheet">
 
         <!-- Google Fonts -->
@@ -30,12 +36,12 @@
             <!-- Container for Typewriter effect -->
             <!-- Typewriter effect below is developed based on tutorials from Traversy Media, Dev Ed, and Geeks for Geeks -->
             <div class="container-fluid d-none d-md-block">
-                <div class="row h-50">
+                <div class="row h-50" data-aos="fade-down-left" data-aos-duration="2000">
                     <div class="col-md-8 col-lg-6 align-self-center justify-content-center">
                         <h1 class="d-flex align-items-center justify-content-center" style="font-family: 'Montserrat', serif; font-style: italic; font-size: 80px; text-shadow: 6px 6px 6px rgb(83, 83, 83);">Peter Schmidt</h1>
                     </div>
                 </div>
-                <div class="row h-50">
+                <div class="row h-50" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="col-md-6 col-lg-6">
                         <span class="d-flex justify-content-center">
                             <h3 class="d-flex align-items-center justify-content-center" style="font-family: 'Montserrat', serif; font-style: italic; font-size: 40px; text-shadow: 6px 6px 6px rgb(83, 83, 83);">Full Stack Developer</h3>
@@ -64,7 +70,7 @@
         <div class="container-fluid bg-light">
 
             <!-- About Me section -->
-            <div class="row px-5 pt-5 pb-5">
+            <div class="row px-5 pt-5 pb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="col m-auto">
                     <div class="row">
                         <div class="col">
@@ -170,8 +176,15 @@
             -->
 
         </div>
-    
+        
+        <!-- Animate On Scroll Scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+        <script>
+            AOS.init();
+        </script>
 
+        <!-- Bootstrap Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>
