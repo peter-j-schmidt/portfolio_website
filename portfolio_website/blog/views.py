@@ -4,7 +4,7 @@ from .forms import CommentForm
 
 # Create your views here.
 def blog_index(request):
-    posts = Post.objects.all().order_by('-created_on')
+    posts = Post.objects.all().order_by('-publish_date')
     context = {
         "posts": posts,
     }
@@ -37,7 +37,7 @@ def blog_category(request):
     posts = Post.objects.filter(
         categories__name__contains=category
     ).order_by(
-        '-created_on'
+        '-publish_date'
     )
     context = {
         "category": category,

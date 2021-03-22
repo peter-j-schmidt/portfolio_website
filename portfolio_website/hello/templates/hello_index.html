@@ -28,7 +28,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
     </head>
-    <body  class="container-fluid bg-light px-0">
+    <body  class="container-fluid bg-light px-0 fade-in">
 
          <!-- Hero Image -->
          <div class="hero">
@@ -70,7 +70,7 @@
         <div class="container-fluid bg-light">
 
             <!-- About Me section -->
-            <div class="row px-5 pt-5 pb-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row px-5 pt-5 pb-5" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="col m-auto">
                     <div class="row">
                         <div class="col">
@@ -111,9 +111,9 @@
                 </div>
             </div>
 
+            <!--
             <hr>
 
-            <!-- 
             <div class="row">
                 <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
                     <a href="/education">
@@ -133,13 +133,13 @@
             <hr>
 
             <div class="row">
-                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center">
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center" data-aos="fade-up">
                     <h3 class="d-flex justify-content-center">Education and Projects</h3>
-                    <p class="d-flex justify-content-center">A page exhibiting courses taken in software engineering an projects developed.</p>
+                    <p class="d-flex justify-content-center">A page exhibiting courses I've taken in software engineering an projects I've developed.</p>
                 </div>
                 <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
-                    <a href="/projects">
-                        <img src="{% static 'hello/images/data_code.jpeg' %}" class="img-fluid" alt="Projects">
+                    <a href="{% url 'project_index' %}">
+                        <img src="{% static 'hello/images/data_code.jpeg' %}" class="img-fluid" alt="Projects" data-aos="zoom-in">
                     </a>
                 </div>
             </div>
@@ -148,32 +148,35 @@
 
             <div class="row">
                 <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
-                    <a href="/other">
+                    <a href="{% url 'blog_index' %}">
                         <figure class="figure">
-                            <img src="{% static 'hello/images/data_code.jpeg' %}" class="fig-img img-fluid" alt="Blog">
+                            <img src="{% static 'hello/images/blog.jpg' %}" class="fig-img img-fluid" alt="Blog" data-aos="zoom-in">
                         </figure>
                     </a>
                 </div>
-                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center">
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center" data-aos="fade-up">
                     <h3 class="d-flex justify-content-center">Blog</h3>
-                    <p class="d-flex justify-content-center">A space where I write about my software engineering journey, from new technologies I'm learning, to the trials of the job search.</p>
+                    <p class="d-flex justify-content-center">A space where I write about my software engineering journey, from new technologies I'm learning, to tech trends.</p>
                 </div>
             </div>
 
+            
             <hr>
 
+            <!--
             <div class="row">
-                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center">
+                <div class="col-sm-12 col-m-6 col-lg-8 align-self-center align-items-center" data-aos="fade-up">
                     <h3 class="d-flex justify-content-center">Other Work</h3>
                     <p class="d-flex justify-content-center">A collection of non-tech related work that I've done.</p>
                 </div>
                 <div class="col-sm-12 col-m-6 col-lg-4 px-5 py-5 d-flex align-self-center alight-items-center justify-content-center">
                     <a href="/other">
-                        <img src="{% static 'hello/images/Alison_Flight.jpg' %}" class="img-fluid" alt="Projects">
+                        <img src="{% static 'hello/images/Alison_Flight.jpg' %}" class="img-fluid" alt="Projects" data-aos="zoom-in">
                         <figcaption class="figure-caption">Taking my wife out for an afternoon flight.</figcaption>
                     </a>
                 </div>
             </div>
+            -->
 
             <!--
             <hr>
@@ -203,4 +206,11 @@
         <!-- Bootstrap Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
+
+    <footer>
+        <div class="d-flex justify-content-center">
+            <p>&#169; Copyright 2021 Peter J. Schmidt</p>
+        </div>
+        
+    </footer>
 </html>
